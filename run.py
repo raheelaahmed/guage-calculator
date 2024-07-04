@@ -69,7 +69,8 @@ def blanket_row_stitch_calculation():
       
         number_of_stitches = int(input("Enter the number of stitches in a swatch: "))
         number_of_rows = int(input("Enter the number of rows in a swatch: "))
-
+        length = int(input("Enter the swatch length"))
+        width = int(input("Enter your swatch width"))
         # Calculate stitches and rows per inch (using swatch data)
         stitches_per_inch = number_of_stitches / width
         rows_per_inch = number_of_rows / length
@@ -115,7 +116,6 @@ def project_cost():
         # Print results with clear labels
         print(f"Yarn used per inch: {yarn_per_inch:.2f} grams")  # Format to 2 decimal places
          
-         
 
-          
-    
+
+
