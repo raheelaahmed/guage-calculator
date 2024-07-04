@@ -3,7 +3,7 @@ name = input("What is your name? ")
 def start():
     """ calculator start function"""
 
-print("welcome to crochet guage calculator")
+print(f"Dear{name}welcome to crochet guage calculator")
 # getting using name by input
 
 
@@ -14,7 +14,7 @@ print("welcome to crochet guage calculator")
 
 
 
-tagline = """
+tagline="""
 _  __                  ____      _                             _ 
 | |/ /___  ___ _ __    / ___|__ _| |_ __ ___     __ _ _ __   __| |
 | ' // _ \/ _ \ '_ \  | |   / _` | | '_ ` _ \   / _` | '_ \ / _` |
