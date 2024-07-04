@@ -116,6 +116,6 @@ def project_cost():
         # Print results with clear labels
         print(f"Yarn used per inch: {yarn_per_inch:.2f} grams")  # Format to 2 decimal places
          
-
-
+       
+project_cost()
 
