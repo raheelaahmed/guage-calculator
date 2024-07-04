@@ -3,7 +3,7 @@ name = input("What is your name? ")
 def start():
     """ calculator start function"""
 
-print(f"Dear{name}welcome to crochet guage calculator")
+print(f"Dear {name} welcome to crochet guage calculator")
 # getting using name by input
 
 
@@ -50,8 +50,12 @@ def calculate_gauge():
         rows_per_inch = number_of_rows / swatch_length
 
         # Print results with clear labels
-        print("Number of stitches per inch:", stitches_per_inch)
-        print("Number of rows per inch:", rows_per_inch)
+       # print("Number of stitches per inch:", stitches_per_inch)
+       # print("Number of rows per inch:", rows_per_inch)
+        print("---....----....----...----.----...----")
+        print("---....----....----...----.----...----")
+        print("---....----....----...----.----...----")
+        print(f"Dear {name}, you Guage on the base of your swatch is {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
 
 
 
@@ -62,8 +66,7 @@ def blanket_row_stitch_calculation():
 # """Calculates the number of rows and stitches per inch for a blanket."""
 
         # Get user input (assuming inches)
-        length = float(input("Enter the blanket length (in inches): "))
-        width = float(input("Enter the blanket width (in inches): "))
+      
         number_of_stitches = int(input("Enter the number of stitches in a swatch: "))
         number_of_rows = int(input("Enter the number of rows in a swatch: "))
 
@@ -82,7 +85,9 @@ def blanket_row_stitch_calculation():
         # Calculate total rows and stitches (assuming rows_per_inch and stitches_per_inch are known)
         total_rows_for_project = required_project_length * rows_per_inch
         total_stitches_per_row = required_project_width * stitches_per_inch
-
+        print("---....----....----...----.----...----")
+        print("---....----....----...----.----...----")
+        print("---....----....----...----.----...----")
         # Print results with clear labels
        # print(f"Total rows required for the project: {total_rows_for_project:.2f}")  # Format to 2 decimal places
         #print(f"Total stitches per row required for the project: {total_stitches_per_row:.2f}")
