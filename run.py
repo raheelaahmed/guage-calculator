@@ -100,3 +100,22 @@ def blanket_row_stitch_calculation():
 
 # Call the function to start the calculation
 blanket_row_stitch_calculation()
+
+def project_cost():
+        swatch_length = float(input("Enter the swatch length (in inches): "))
+        swatch_width = float(input("Enter the swatch width (in inches): "))
+        yarn_weight = float(input("Enter the yarn weight used for the swatch (in grams): "))
+
+        # Calculate swatch area (assuming rectangular swatch)
+        swatch_area = swatch_length * swatch_width
+
+        # Calculate yarn used per inch (assuming yarn is evenly distributed)
+        yarn_per_inch = yarn_weight / swatch_area
+
+        # Print results with clear labels
+        print(f"Yarn used per inch: {yarn_per_inch:.2f} grams")  # Format to 2 decimal places
+         
+         
+
+          
+    
