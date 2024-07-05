@@ -38,25 +38,7 @@ print(f"Thank you, {name}, for using this app!\nThis app will help you calculate
 print("you need to follow these steps to calculate the number of stiches per inch \n 1:Make a swatch\n 2:Count the number of rows\n 3:Count the number of stiches in the row \n 4:Measure the width in inches\n 5:measure the length in inches")
 #start()
 
-def menu():
 
-        print("[1] Enter 1 to calculate Project-Guage.")
-        print("[2] Enter 2 to calculate Estimated Rows and Stitches per Row. for your Project.")
-        print("[3] Enter 3. to calculate Estimated yarn and Cost for your project")
-        print("[0] Exit the program")
-
-        #calling menu function
-        menu()
-        option=int(input("Enter your option here: "))
-while option != 0:
-    if option == 1:
-        calculate_gauge()
-    elif option == 2:
-        blanket_row_stitch_calculation()
-    elif option == 3:
-        project_cost()
-    else:
-        print("Invalid option")
 
  
 
@@ -151,4 +133,25 @@ def project_cost():
         print(f"project cost {project_cost}")
        
 #project_cost()
+
+
+def menu():
+    print("[1] Enter 1 to calculate Project-Guage.")
+    print("[2] Enter 2 to calculate Estimated Rows and Stitches per Row. for your Project.")
+    print("[3] Enter 3. to calculate Estimated yarn and Cost for your project")
+    print("[0] Exit the program")
+
+    option = int(input("Enter your option here: "))
+    return option
+
+while True:
+    option = menu()
+    if option == 1:
+         calculate_gauge()
+    elif option == 2:
+        blanket_row_stitch_calculation()
+    elif option == 3:
+     project_cost()
+    else:
+        print("Invalid option")
 
