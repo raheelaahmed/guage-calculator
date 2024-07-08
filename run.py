@@ -1,20 +1,8 @@
-# getting using name by input
-name = input("What is your name? ")
-def start():
-    """ calculator start function"""
+#Declaring variables
 
-print(f"Dear {name} welcome to crochet guage calculator")
-# getting using name by input
-
-
-#i want to give three options here 1:calulate the guage forany project 2:calculate the number of stiches and rows for blankets from given sizes \n 3:calculate the rquired number of stiches and rows.  for your desired lenth and wdth. of the project
 
 #tag line in form of. ascci art
-
-
-
-
-tagline="""
+tagline =  """
 _  __                  ____      _                             _ 
 | |/ /___  ___ _ __    / ___|__ _| |_ __ ___     __ _ _ __   __| |
 | ' // _ \/ _ \ '_ \  | |   / _` | | '_ ` _ \   / _` | '_ \ / _` |
@@ -23,18 +11,30 @@ _  __                  ____      _                             _
  / ___|_ __ __|_| ___| |__   ___| |_   / _ \ _ __                 
 | |   | '__/ _ \ / __| '_ \ / _ \ __| | | | | '_ \                
 | |___| | | (_) | (__| | | |  __/ |_  | |_| | | | |               
- \____|_|  \___/ \___|_| |_|\___|\__|  \___/|_| |_|rah"""
+ \____|_|  \___/ \___|_| |_|\___|\__|  \___/|_| |_|"""
+
+
+border = """
+^^^^^^*******^^^^^^*******^^^^^^*******^^^^^*******
+"""
+# getting using name by input
+name = input("What is your name? ")
+def start():
+    """ calculator start function"""
+
+print(f"Dear {name} welcome to crochet guage calculator")
+# getting using name by input
 
 #print tagline
 print (tagline)
 
 
-#print("--------------------------------------------------------------------------------------------")
+print(border)
 
-##print("--------------------------------------------------------------------------------------------")
 
-print("--------------------------------------------------------------------------------------------")
 print(f"Thank you, {name}, for using this app!\nThis app will help you calculate the number of stitches per inch.") 
+
+print(border)
 print("you need to follow these steps to calculate the number of stiches per inch \n 1:Make a swatch\n 2:Count the number of rows\n 3:Count the number of stiches in the row \n 4:Measure the width in inches\n 5:measure the length in inches")
 #start()
 
@@ -56,55 +56,46 @@ def calculate_gauge():
         # Print results with clear labels
        # print("Number of stitches per inch:", stitches_per_inch)
        # print("Number of rows per inch:", rows_per_inch)
-        print("---....----....----...----.----...----")
-        print("---....----....----...----.----...----")
-        print("---....----....----...----.----...----")
+        print(border)
+      
         print(f"Dear {name}, you Guage on the base of your swatch is {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
 
+        print(border)
 
 
-# Call the function to start the calculation
-#calculate_gauge()
 # function for clculating rows. and stiches for any size
 def blanket_row_stitch_calculation():
-# """Calculates the number of rows and stitches per inch for a blanket."""
+
 
         # Get user input (assuming inches)
       
         number_of_stitches = int(input("Enter the number of stitches in a swatch: "))
         number_of_rows = int(input("Enter the number of rows in a swatch: "))
-        length = int(input("Enter the swatch length"))
-        width = int(input("Enter your swatch width"))
+        length = int(input("Enter the swatch length: "))
+        width = int(input("Enter your swatch width: "))
         # Calculate stitches and rows per inch (using swatch data)
         stitches_per_inch = number_of_stitches / width
         rows_per_inch = number_of_rows / length
 
-        # Print results with clear labels
-       # print("Number of stitches per inch:", stitches_per_inch)
-       # print("Number of rows per inch:", rows_per_inch)
 
         # Get user input for project dimensions
+        print("Enter the required project length")
         required_project_length = float(input("Enter the project length (in inches): "))
+        print("Enter the required project width")
         required_project_width = float(input("Enter the project width (in inches): "))
 
         # Calculate total rows and stitches (assuming rows_per_inch and stitches_per_inch are known)
         total_rows_for_project = required_project_length * rows_per_inch
         total_stitches_per_row = required_project_width * stitches_per_inch
-        print("---....----....----...----.----...----")
-        print("---....----....----...----.----...----")
-        print("---....----....----...----.----...----")
+        print(border)
+        
         # Print results with clear labels
-       # print(f"Total rows required for the project: {total_rows_for_project:.2f}")  # Format to 2 decimal places
-        #print(f"Total stitches per row required for the project: {total_stitches_per_row:.2f}")
         print(f"dear {name} you need {total_rows_for_project:.2f} Rows and {total_stitches_per_row:.2f} stiches per Row for this project")
 
 
 
 
 
-
-# Call the function to start the calculation
-#blanket_row_stitch_calculation()
 
 def project_cost():
         swatch_length = float(input("Enter the swatch length (in inches): "))
@@ -120,19 +111,19 @@ def project_cost():
         # Print results with clear labels
         print(f"Yarn used per inch: {yarn_per_inch:.2f} grams")  # Format to 2 decimal places
 
-        project_length=int(input("Enter project length in inches"))
-        project_width=int(input("Enter project width in inches"))
+        project_length=int(input("Enter project length in inches: "))
+        project_width=int(input("Enter project width in inches: "))
         project_Area=  project_length*project_width
         estimated_yarn= project_Area*yarn_per_inch
 
         print(f"you need {estimated_yarn} grams yarn for the project")
 
-        cost=float(input("Enter the price per 100grams"))
+        cost=float(input("Enter the price per 100grams: "))
 
         project_cost=cost* estimated_yarn/100
         print(f"project cost {project_cost}")
        
-#project_cost()
+
 
 
 def menu():
