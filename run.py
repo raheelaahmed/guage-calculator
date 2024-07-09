@@ -13,7 +13,7 @@ _  __                  ____      _                             _
 | |___| | | (_) | (__| | | |  __/ |_  | |_| | | | |               
  \____|_|  \___/ \___|_| |_|\___|\__|  \___/|_| |_|"""
 
-
+#boder
 border = """
 ^^^^^^*******^^^^^^*******^^^^^^*******^^^^^*******
 """
@@ -31,12 +31,11 @@ print (tagline)
 
 print(border)
 
-
-print(f"Thank you, {name}, for using this app!\nThis app will help you to Calculate Guage, \n Blanket Row and Stitch calculation according to your desired length and width and \n calculate the estimated yarn and cost for your project. ") 
+print(f"Thank you, {name}, for using this app!\n This app will help you to calculate the Guage,  Estimated rows and Stiches Per row, Estimated yarn and Estimated cost for your project.") 
 
 print(border)
-print("you need to follow these steps to calculate the number of stiches per inch \n 1:Make a swatch\n 2:Count the number of rows\n 3:Count the number of stiches in the row \n 4:Measure the width in inches\n 5:measure the length in inches")
-#start()
+print("you need to follow these steps: \n 1:Make a swatch\n 2:Count the number of rows\n 3:Count the number of stiches in the row \n 4:Measure the width in inches\n 5:measure the length in inches")
+start()
 
 
 
