@@ -60,6 +60,8 @@ def calculate_gauge():
         print(f"Dear {name}, you Guage on the base of your swatch is {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
 
         print(border)
+
+        print("Thankyou for visiting")
        
 
 
@@ -92,6 +94,7 @@ def blanket_row_stitch_calculation():
         print(border)
         print(f"dear {name} you need {total_rows_for_project:.2f} Rows and {total_stitches_per_row:.2f} stiches per Row for this project")
         print(border)
+        print("Thankyou for visiting")
     
 
 
@@ -126,7 +129,7 @@ def project_cost():
         print(border)
         print(f" Dear {name} your project cost will be ${project_cost}")
         print(border)
-       
+        print("Thankyou for visiting")
        
 
 
