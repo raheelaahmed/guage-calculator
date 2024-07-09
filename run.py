@@ -32,7 +32,7 @@ print (tagline)
 print(border)
 
 
-print(f"Thank you, {name}, for using this app!\nThis app will help you calculate the number of stitches per inch.") 
+print(f"Thank you, {name}, for using this app!\nThis app will help you to Calculate Guage, \n Blanket Row and Stitch calculation according to your desired length and width and \n calculate the estimated yarn and cost for your project. ") 
 
 print(border)
 print("you need to follow these steps to calculate the number of stiches per inch \n 1:Make a swatch\n 2:Count the number of rows\n 3:Count the number of stiches in the row \n 4:Measure the width in inches\n 5:measure the length in inches")
@@ -61,6 +61,7 @@ def calculate_gauge():
         print(f"Dear {name}, you Guage on the base of your swatch is {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
 
         print(border)
+       
 
 
 # function for clculating rows. and stiches for any size
@@ -88,9 +89,11 @@ def blanket_row_stitch_calculation():
         total_rows_for_project = required_project_length * rows_per_inch
         total_stitches_per_row = required_project_width * stitches_per_inch
         print(border)
-        
-        # Print results with clear labels
+       
+        print(border)
         print(f"dear {name} you need {total_rows_for_project:.2f} Rows and {total_stitches_per_row:.2f} stiches per Row for this project")
+        print(border)
+    
 
 
 
@@ -108,20 +111,23 @@ def project_cost():
         # Calculate yarn used per inch (assuming yarn is evenly distributed)
         yarn_per_inch = yarn_weight / swatch_area
 
-        # Print results with clear labels
         print(f"Yarn used per inch: {yarn_per_inch:.2f} grams")  # Format to 2 decimal places
 
         project_length=int(input("Enter project length in inches: "))
         project_width=int(input("Enter project width in inches: "))
         project_Area=  project_length*project_width
         estimated_yarn= project_Area*yarn_per_inch
-
-        print(f"you need {estimated_yarn} grams yarn for the project")
+        print(border)
+        print(f" Dear {name} you need {estimated_yarn} grams yarn for the project.")
+        print(border)
 
         cost=float(input("Enter the price per 100grams: "))
 
         project_cost=cost* estimated_yarn/100
-        print(f"project cost {project_cost}")
+        print(border)
+        print(f" Dear {name} your project cost will be ${project_cost}")
+        print(border)
+       
        
 
 
@@ -139,10 +145,13 @@ while True:
     option = menu()
     if option == 1:
          calculate_gauge()
+         break
     elif option == 2:
         blanket_row_stitch_calculation()
+        break
     elif option == 3:
      project_cost()
+     break
     else:
         print("Invalid option")
 
