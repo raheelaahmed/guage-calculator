@@ -31,7 +31,7 @@ print (tagline)
 
 print(border)
 
-print(f"Thank you, {name}, for using this app!\nThis app will help you to calculate the Guage,  Estimated rows and Stiches Per row, Estimated yarn and Estimated cost for your project.") 
+print(f"Thank you, {name}, for using this app!\nThis app will help you to calculate the Guage,  Estimated rows and \nStiches Per row, Estimated yarn and Estimated cost for your project.") 
 
 print(border)
 print("you need to follow these steps: \n 1:Make a swatch\n 2:Count the number of rows\n 3:Count the number of stiches in the row \n 4:Measure the width in inches\n 5:measure the length in inches")
