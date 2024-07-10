@@ -1,24 +1,31 @@
-#Declaring variables
+# Declaring variables
 
+tagline="""  
 
-#tag line in form of. ascci art
-tagline =  """
-_  __                  ____      _                             _ 
-| |/ /___  ___ _ __    / ___|__ _| |_ __ ___     __ _ _ __   __| |
-| ' // _ \/ _ \ '_ \  | |   / _` | | '_ ` _ \   / _` | '_ \ / _` |
-| . \  __/  __/ |_) | | |__| (_| | | | | | | | | (_| | | | | (_| |
-|_|\_\___|\___| .__/  _\____\__,_|_|_| |_|_|_|  \__,_|_| |_|\__,_|
- / ___|_ __ __|_| ___| |__   ___| |_   / _ \ _ __                 
-| |   | '__/ _ \ / __| '_ \ / _ \ __| | | | | '_ \                
-| |___| | | (_) | (__| | | |  __/ |_  | |_| | | | |               
- \____|_|  \___/ \___|_| |_|\___|\__|  \___/|_| |_|"""
+.----------------------------------------------------------------------------------.
+|      :::        :::::::::: ::::::::::: ::::::::                                  |
+|     :+:        :+:            :+:    :+:    :+:                                  |
+|    +:+        +:+            +:+    +:+                                          |
+|   +#+        +#++:++#       +#+    +#++:++#++                                    |
+|  +#+        +#+            +#+           +#+                                     |
+| #+#        #+#            #+#    #+#    #+#                                      |
+|########## ##########     ###     ########                                        |
+|      ::::::::  :::::::::   ::::::::   ::::::::  :::    ::: :::::::::: :::::::::::|
+|    :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:            :+:     |
+|   +:+        +:+    +:+ +:+    +:+ +:+        +:+    +:+ +:+            +:+      |
+|  +#+        +#++:++#:  +#+    +:+ +#+        +#++:++#++ +#++:++#       +#+       |
+| +#+        +#+    +#+ +#+    +#+ +#+        +#+    +#+ +#+            +#+        |
+|#+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#            #+#         |
+|########  ###    ###  ########   ########  ###    ### ##########     ###          |
+'----------------------------------------------------------------------------------'   """
 
-#boder
 border = """
 ^^^^^^*******^^^^^^*******^^^^^^*******^^^^^*******
 """
-# getting using name by input
+
+# Getting user name by input
 name = input("What is your name? ")
+
 def start():
     """ calculator start function"""
 
@@ -28,8 +35,8 @@ print(f"Dear {name} welcome to crochet guage calculator")
 #print tagline
 print (tagline)
 
-#printing border at the start and at the end of print statement.
-print(border)
+#printing border at the end of print statement.
+
 
 print(f"Thank you, {name}, for using this app!\nThis app will help you to calculate the Guage,  Estimated rows and \nStitches Per row, Estimated yarn and Estimated cost for your project.") 
 
@@ -38,7 +45,8 @@ print("you need to follow these steps: \n 1:Make a swatch\n 2:Count the number o
 
 #calling start function.
 start()
-
+#printing statment to select options.
+print("Please enter from one of the following option: ")
 
 
 
@@ -102,7 +110,7 @@ def blanket_row_stitch_calculation():
     
         #printing border and print statment for result adding users name in the statment.
         print(border)
-        print(f"dear {name} you need {total_rows_for_project:.2f} Rows and {total_stitches_per_row:.2f} stiches per Row for this project")
+        print(f"dear {name} you need {total_rows_for_project} Rows and {total_stitches_per_row} stiches per Row for this project")
         print(border)
         #printing Thankyou statement.
         print("Thankyou for visiting")
