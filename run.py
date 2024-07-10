@@ -49,8 +49,9 @@ def calculate_gauge():
         number_of_rows = int(input("Enter the number of rows in the swatch: "))
 
         # Calculate stitches and rows per inch (using swatch data)
-        stitches_per_inch = number_of_stitches / swatch_width
-        rows_per_inch = number_of_rows / swatch_length
+        # rounding the result as whole number us int data type.
+        stitches_per_inch = int(number_of_stitches / swatch_width)
+        rows_per_inch =int(number_of_rows / swatch_length)
 
         # Print results with clear labels
        # print("Number of stitches per inch:", stitches_per_inch)
@@ -76,8 +77,8 @@ def blanket_row_stitch_calculation():
         length = int(input("Enter the swatch length: "))
         width = int(input("Enter your swatch width: "))
         # Calculate stitches and rows per inch (using swatch data)
-        stitches_per_inch = number_of_stitches / width
-        rows_per_inch = number_of_rows / length
+        stitches_per_inch = int(number_of_stitches / width)
+        rows_per_inch = int(number_of_rows / length)
 
 
         # Get user input for project dimensions
@@ -87,8 +88,8 @@ def blanket_row_stitch_calculation():
         required_project_width = float(input("Enter the project width (in inches): "))
 
         # Calculate total rows and stitches (assuming rows_per_inch and stitches_per_inch are known)
-        total_rows_for_project = required_project_length * rows_per_inch
-        total_stitches_per_row = required_project_width * stitches_per_inch
+        total_rows_for_project = int(required_project_length * rows_per_inch)
+        total_stitches_per_row = int(required_project_width * stitches_per_inch)
         print(border)
        
         print(border)
@@ -118,14 +119,14 @@ def project_cost():
         project_length=int(input("Enter project length in inches: "))
         project_width=int(input("Enter project width in inches: "))
         project_Area=  project_length*project_width
-        estimated_yarn= project_Area*yarn_per_inch
+        estimated_yarn=int(project_Area*yarn_per_inch)
         print(border)
         print(f" Dear {name} you need {estimated_yarn} grams yarn for the project.")
         print(border)
 
         cost=float(input("Enter the price per 100grams: "))
 
-        project_cost=cost* estimated_yarn/100
+        project_cost= cost* estimated_yarn/100
         print(border)
         print(f" Dear {name} your project cost will be ${project_cost}")
         print(border)
@@ -142,18 +143,22 @@ def menu():
 
     option = int(input("Enter your option here: "))
     return option
-
+Print("Please Enter any option from the following: ")
 while True:
     option = menu()
     if option == 1:
-         calculate_gauge()
-         break
+        calculate_gauge()
+
     elif option == 2:
         blanket_row_stitch_calculation()
-        break
+
     elif option == 3:
-     project_cost()
-     break
+        project_cost()
+
+    elif option == 0:
+        print("Exiting the program.")
+        # Exit the loop
+        break  
+
     else:
         print("Invalid option")
-
