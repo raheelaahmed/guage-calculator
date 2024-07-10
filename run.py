@@ -32,7 +32,7 @@ def start():
 print(f"Dear {name} welcome to crochet guage calculator")
 # getting using name by input
 
-#print tagline
+# print tagline
 print(tagline)
 
 # printing border at the end of print statement.
