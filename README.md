@@ -67,8 +67,10 @@ Happy coding!
 ## Debugging:
   ### deployment to Heroko error:
   Missing required flag app
+  ### solution:
+   node.js file was missing, i added it and it was working fine.
   
-  solution: 
+  
 
   credits:
 
