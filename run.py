@@ -82,6 +82,9 @@ number_of_rows = int(input("Enter the number of rows in the swatch: "))
 # calling start function.
 start()
 
+print(border)
+print(border)
+
 # printing statment to select options.
 print("Please enter from one of the following option: ")
 
