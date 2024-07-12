@@ -1,7 +1,6 @@
 import math
 
 import colorama
-
 colorama.init()
 
 # Declaring variables
