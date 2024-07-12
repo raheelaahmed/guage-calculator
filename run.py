@@ -1,23 +1,38 @@
 # Declaring variables
 
-tagline="""  
+tagline = """
 
-.----------------------------------------------------------------------------------.
-|      :::        :::::::::: ::::::::::: ::::::::                                  |
-|     :+:        :+:            :+:    :+:    :+:                                  |
-|    +:+        +:+            +:+    +:+                                          |
-|   +#+        +#++:++#       +#+    +#++:++#++                                    |
-|  +#+        +#+            +#+           +#+                                     |
-| #+#        #+#            #+#    #+#    #+#                                      |
-|########## ##########     ###     ########                                        |
-|      ::::::::  :::::::::   ::::::::   ::::::::  :::    ::: :::::::::: :::::::::::|
-|    :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:            :+:     |
-|   +:+        +:+    +:+ +:+    +:+ +:+        +:+    +:+ +:+            +:+      |
-|  +#+        +#++:++#:  +#+    +:+ +#+        +#++:++#++ +#++:++#       +#+       |
-| +#+        +#+    +#+ +#+    +#+ +#+        +#+    +#+ +#+            +#+        |
-|#+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#            #+#         |
-|########  ###    ###  ########   ########  ###    ### ##########     ###          |
-'----------------------------------------------------------------------------------'   """
+██╗  ██╗███████╗███████╗██████╗      ██████╗ █████╗ ██╗     ███╗   ███╗
+██║ ██╔╝██╔════╝██╔════╝██╔══██╗    ██╔════╝██╔══██╗██║     ████╗ ████║
+█████╔╝ █████╗  █████╗  ██████╔╝    ██║     ███████║██║     ██╔████╔██║
+██╔═██╗ ██╔══╝  ██╔══╝  ██╔═══╝     ██║     ██╔══██║██║     ██║╚██╔╝██║
+██║  ██╗███████╗███████╗██║         ╚██████╗██║  ██║███████╗██║ ╚═╝ ██║
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝          ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝
+                                                                       
+ █████╗ ███╗   ██╗██████╗                                              
+██╔══██╗████╗  ██║██╔══██╗                                             
+███████║██╔██╗ ██║██║  ██║                                             
+██╔══██║██║╚██╗██║██║  ██║                                             
+██║  ██║██║ ╚████║██████╔╝                                             
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝                                              
+                                                                       
+ ██████╗██████╗  ██████╗  ██████╗██╗  ██╗███████╗████████╗             
+██╔════╝██╔══██╗██╔═══██╗██╔════╝██║  ██║██╔════╝╚══██╔══╝             
+██║     ██████╔╝██║   ██║██║     ███████║█████╗     ██║                
+██║     ██╔══██╗██║   ██║██║     ██╔══██║██╔══╝     ██║                
+╚██████╗██║  ██║╚██████╔╝╚██████╗██║  ██║███████╗   ██║                
+ ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝                
+                                                                       
+ ██████╗ ███╗   ██╗                                                    
+██╔═══██╗████╗  ██║                                                    
+██║   ██║██╔██╗ ██║                                                    
+██║   ██║██║╚██╗██║                                                    
+╚██████╔╝██║ ╚████║                                                    
+ ╚═════╝ ╚═╝  ╚═══╝  """   
+   
+
+
+
 
 border = """
 ^^^^^^*******^^^^^^*******^^^^^^*******^^^^^*******
@@ -48,6 +63,21 @@ print("2:Count the number of rows.")
 print("3:Count the number of stiches in the row.") 
 print("4:Measure the width in inches.")
 print("5:measure the length in inches.")
+print(border)
+global swatch_length
+swatch_length =float(input("Enter the swatch length (in inches): "))
+ 
+ # getting user input for swatch width.
+global swatch_width
+swatch_width = float(input("Enter the swatch width (in inches): "))
+
+# getting user input for number of stitches per row in swatch.
+global number_of_stitches
+global number_of_rows
+number_of_stitches = int(input("Enter the number of stitches per row in the swatch: "))
+ #getting user input for number of rows in swatch.
+number_of_rows = int(input("Enter the number of rows in the swatch: "))
+
 
 # calling start function.
 start()
@@ -59,54 +89,29 @@ print("Please enter from one of the following option: ")
 # function calculate_guage
 def calculate_gauge():
    # """Calculates the gauge (stitches and rows per inch) based on a swatch."""
-       
-       # getting user input for swatch lenth.
-        swatch_length =float(input("Enter the swatch length (in inches): "))
+   # Calculate stitches and rows per inch (using swatch data)
         
-         # getting user input for swatch width.
-        swatch_width = float(input("Enter the swatch width (in inches): "))
-       
-        # getting user input for number of stitches per row in swatch.
-        number_of_stitches = int(input("Enter the number of stitches per row in the swatch: "))
-       
-        #getting user input for number of rows in swatch.
-        number_of_rows = int(input("Enter the number of rows in the swatch: "))
-
-        # Calculate stitches and rows per inch (using swatch data)
-        
-        # rounding the result as whole number us int data type.
-        stitches_per_inch = int(number_of_stitches / swatch_width)
-        rows_per_inch =int(number_of_rows / swatch_length)
+   # rounding the result as whole number us int data type.
+   stitches_per_inch = int(number_of_stitches / swatch_width)
+   rows_per_inch =int(number_of_rows / swatch_length)
       
-       # printing border and print statment, border will be before and after the print statment.
-        print(border)
-        print(f"Dear {name}, you Guage on the base of your swatch is {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
-        print(border)
+   # printing border and print statment, border will be before and after the print statment.
+   print(border)
+   print(f"Dear {name}, you Guage on the base of your swatch is {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
+   print(border)
       
-       # printing Thankyou statement
-        print("Thankyou for visiting")
+   # printing Thankyou statement
+   print("Thankyou for visiting")
        
        
        # function for clculating rows. and stiches for any size
 def blanket_row_stitch_calculation():
 
-        # Get user input (assuming inches).
-       
-        # gtting the user input for number of stitches per row in swatch.
-        number_of_stitches = int(input("Enter the number of stitches per row in the swatch: "))
-       
-        # getting the user input for number of rows in swatch.
-        number_of_rows = int(input("Enter the number of rows in a swatch: "))
-       
-        # getting user input for swatch length.
-        length = int(input("Enter the swatch length in inches: "))
-        
-        # getting user input for swatch width.
-        width = int(input("Enter your swatch width in inches: "))
+    
        
         # Calculate stitches and rows per inch (using swatch data) and rounding up result as whole number.
-        stitches_per_inch = int(number_of_stitches / width)
-        rows_per_inch = int(number_of_rows / length)
+        stitches_per_inch = int(number_of_stitches / swatch_width)
+        rows_per_inch = int(number_of_rows / swatch_length)
 
         # Get user input for project dimensions
         print("Enter the required project length")
@@ -134,12 +139,9 @@ def blanket_row_stitch_calculation():
 # function to calculate the estimated yarn and cost for the project.
 def project_cost():
        
-        # getting user input for swatch length.
-        swatch_length = float(input("Enter the swatch length (in inches): "))
       
-        # getting user input for swatch width.
-        swatch_width = float(input("Enter the swatch width (in inches): "))
       
+        
         # getting user input for yarn used for swatch in grams.
         yarn_weight = float(input("Enter the yarn weight used for the swatch (in grams): "))
 
