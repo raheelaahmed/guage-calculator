@@ -13,10 +13,6 @@ def start():
 
 
 print(f"Dear {name} welcome to crochet guage calculator")
-
-
-
-
 # printing border at the end of print statement.
 print(f"Thank you, {name}, for using this app!")
 print("This app will help you to calculate the Guage.")
@@ -138,29 +134,30 @@ def project_cost():
     print("Thankyou for visiting")
     # function for main menu.
 
+
 def menu():
-    
     # printing options.
     print("[1] Enter 1 to calculate Project-Guage.")
-    print("[2] Enter 2 to calculate Estimated Rows and Stitches per Row. for your Project.")
+    print("[2] Enter 2 to calculate Estimated Rows and \
+    Stitches per Row. for your Project.")
     print("[3] Enter 3. to calculate Estimated yarn and Cost for your project")
     print("[0] Exit the program")
-  
-   # getting user input  for options.
+    # getting user input  for options.
     option = int(input("Enter your option here: "))
     return option
+    # using while loop, if user enter correct option it will start
+    # calling functions accoring to user choosen option.
 
-# using while loop, if user enter correct option it will start calling functions accoring to user choosen option.
+
 while True:
     option = menu()
     if option == 1:
-       
         # if user choose option 1 calling function calculate_gauge().
         calculate_gauge()
 
     elif option == 2:
-       
-        # if user choose option 2 calling function blanket_row_stitch_calculation().
+        # if user choose option 2 calling function\
+        # blanket_row_stitch_calculation().
         blanket_row_stitch_calculation()
 
     elif option == 3:
@@ -170,11 +167,9 @@ while True:
 
     elif option == 0:
         print("Exiting the program.")
-       
         # if user choose option 0  Exit the loop.
-        break  
+        break
 
     else:
-       
         # printing invalid statment
         print("Invalid option")
