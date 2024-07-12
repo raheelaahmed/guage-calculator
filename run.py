@@ -28,6 +28,7 @@ print("* Estimated yarn and Estimated cost for your project.")
 
 print(border)
 print(colorama.Fore.RED + "you need to follow these steps:")
+
 print(colorama.Fore.BLACK + "1:Make a swatch.")
 print("2:Count the number of rows.")
 print("3:Count the number of stiches in the row.")
@@ -70,7 +71,7 @@ def calculate_gauge():
     # printing border and print statment, border will\
     # be before and after the print statment.
     print(border)
-    print(colorama.Fore.RED + f"Dear {name}, you Guage on the base of your swatch \
+    print(colorama.Fore.RED + f"Dear {name}, you Guage on the base of your swatch\
     is {rows_per_inch}rows per inch and {stitches_per_inch} stiches per inch ")
     print(colorama.Fore.BLACK + border)
     # printing Thankyou statement
@@ -126,7 +127,7 @@ def project_cost():
     Total_balls_of_yarn = math.ceil(estimated_yarn/100)
     # printing boder and result statement using user name.
     print(colorama.Fore.BLACK + border)
-    print(colorama.Fore.RED + f" Dear {name} you need {Total_balls_of_yarn } \
+    print(colorama.Fore.RED + f" Dear {name} you need {Total_balls_of_yarn }\
     balls of yarn for the project.")
     print( colorama.Fore.BLACK + border)
     # getting user input for price of yarn per 100grams.
