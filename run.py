@@ -61,6 +61,7 @@ print("Please enter from one of the following option: ")
 
 # function calculate_guage
 def calculate_gauge():
+    """Function to calculate the guage for the project"""
     # """Calculates the gauge (stitches and rows per inch)
     # based on a swatch."""
     # Calculate stitches and rows per inch (using swatch data)
@@ -70,8 +71,8 @@ def calculate_gauge():
     # printing border and print statment, border will\
     # be before and after the print statment.
     print(border)
-    print(colorama.Fore.RED + f"Dear {name}, you Guage on the base of your swatch\
-    is {rows_per_inch}rows per inch and {stitches_per_inch} stiches per inch ")
+    print(colorama.Fore.RED + f"Dear {name}, you Guage on the base of your swatch is\
+    {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
     print(colorama.Fore.WHITE + border)
     # printing Thankyou statement
     print("Thankyou for visiting")
@@ -79,6 +80,7 @@ def calculate_gauge():
 
 
 def blanket_row_stitch_calculation():
+    """Funtion to calculate Total Rows and Stitches per row  for the project according to input provided by user"""
     # Calculate stitches and rows per inch (using swatch data)\
     #  and rounding up result as whole number.
     stitches_per_inch = int(number_of_stitches / swatch_width)
@@ -107,6 +109,8 @@ def blanket_row_stitch_calculation():
 
 
 def project_cost():
+    """function to calculate Estmated yarn and Estimated cost for the project/
+     using the input provided by the user"""
     # getting user input for yarn used for swatch in grams.
     yarn_weight = float(input(colorama.Fore.GREEN + "Enter the yarn weight used\
     for the swatch (in grams): "))
