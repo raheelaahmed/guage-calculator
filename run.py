@@ -15,6 +15,8 @@ border = """
 
 # Getting user name by input
 name = input(colorama.Fore.GREEN + "What is your name? ")
+time.sleep(1)
+print(border)
 
 
 def start():
@@ -27,6 +29,8 @@ print( colorama.Fore.WHITE + border)
 # printing border at the end of print statement.
 time.sleep(1)
 print(f"You can use this app to calculate following:")
+time.sleep(1)
+print(border)
 time.sleep(1)
 print("* This app will help you to calculate the Guage.")
 time.sleep(1)
