@@ -20,7 +20,7 @@ def start():
 
 
 time.sleep(1)
-print(colorama.Fore.BLUE + f"Dear {name} welcome to crochet guage calculator")
+print(colorama.Fore.BLUE + f"Dear {name}, welcome to crochet guage calculator")
 time.sleep(1)
 print(colorama.Fore.WHITE + border)
 # printing border at the end of print statement.
@@ -138,7 +138,7 @@ def blanket_row_stitch_calculation():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.BLUE + f"dear {name} you need {total_rows_for_project}\
+    print(colorama.Fore.BLUE + f"dear {name}, you need {total_rows_for_project}\
     Rows and {total_stitches_per_row} stiches per Row for this project")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
