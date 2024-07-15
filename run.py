@@ -180,7 +180,7 @@ def project_cost():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.BLUE + f" Dear {name} you need {Total_balls_of_yarn }\
+    print(colorama.Fore.BLUE + f" Dear {name}, you need {Total_balls_of_yarn }\
     balls of yarn for the project.")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
@@ -193,7 +193,7 @@ def project_cost():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.BLUE + f" Dear {name}\
+    print(colorama.Fore.BLUE + f" Dear {name},\
     your project cost will be ${project_cost}")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
