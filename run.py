@@ -132,14 +132,16 @@ def blanket_row_stitch_calculation():
     the project width (in inches): "))
     # Calculate total rows and stitches.
     total_rows_for_project = math.ceil(required_project_length * rows_per_inch)
-    total_stitches_per_row = math.ceil(required_project_width * stitches_per_inch)
+    total_stitches_per_row = \
+        math.ceil(required_project_width * stitches_per_inch)
     # printing border and print statment for result
     # adding users name in the statment.
     time.sleep(0.5)
     print(colorama.Fore.WHITE + border)
     time.sleep(1)
-    print(colorama.Fore.BLUE + f"dear {name}, you need {total_rows_for_project}\
-    Rows and {total_stitches_per_row} stiches per Row for this project")
+    print(colorama.Fore.BLUE + f"dear {name}, you need\
+    {total_rows_for_project} Rows and \
+    {total_stitches_per_row} stiches per Row for this project")
     time.sleep(0.5)
     print(colorama.Fore.WHITE + border)
     # printing Thank you statement.
