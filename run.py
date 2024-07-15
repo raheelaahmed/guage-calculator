@@ -23,7 +23,7 @@ def start():
     """ calculator start function"""
 
 time.sleep(1)
-print( colorama.Fore.RED + f"Dear {name} welcome to crochet guage calculator")
+print( colorama.Fore.BLUE + f"Dear {name} welcome to crochet guage calculator")
 time.sleep(1)
 print( colorama.Fore.WHITE + border)
 # printing border at the end of print statement.
@@ -40,7 +40,7 @@ print("* Estimated yarn and Estimated cost for your project.")
 time.sleep(1)
 print(border)
 time.sleep(2)
-print(colorama.Fore.RED + "you need to follow these steps:")
+print(colorama.Fore.BLUE + "you need to follow these steps:")
 time.sleep(1)
 print( colorama.Fore.WHITE + border)
 time.sleep(1)
@@ -100,13 +100,13 @@ def calculate_gauge():
     time.sleep(1)
     print( colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.RED + f"Dear {name}, you Guage on the base of your swatch is\
+    print(colorama.Fore.BLUE + f"Dear {name}, you Guage on the base of your swatch is\
     {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
-    # printing Thankyou statement
+    # printing sample_length statement
     time.sleep(1)
-    print("Thankyou for visiting")
+    print("Thank you for visiting")
     # function for clculating rows. and stiches for any size
     time.sleep(1)
     print(border)
@@ -138,13 +138,13 @@ def blanket_row_stitch_calculation():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.RED + f"dear {name} you need {total_rows_for_project} Rows and\
+    print(colorama.Fore.BLUE + f"dear {name} you need {total_rows_for_project} Rows and\
     {total_stitches_per_row} stiches per Row for this project")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
-    # printing Thankyou statement.
+    # printing Thank you statement.
     time.sleep(1)
-    print("Thankyou for visiting")
+    print("Thank. you for visiting")
     time.sleep(1)
     print(border)
     # function to calculate the estimated yarn and cost for the project.
@@ -177,7 +177,7 @@ def project_cost():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.RED + f" Dear {name} you need {Total_balls_of_yarn }\
+    print(colorama.Fore.BLUE + f" Dear {name} you need {Total_balls_of_yarn }\
     balls of yarn for the project.")
     time.sleep(1)
     print( colorama.Fore.WHITE + border)
@@ -190,12 +190,12 @@ def project_cost():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.RED + f" Dear {name} your project cost will be ${project_cost}")
+    print(colorama.Fore.BLUE + f" Dear {name} your project cost will be ${project_cost}")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
-    # printing Thankyou statement.
+    # printing Thank you statement.
     time.sleep(1)
-    print("Thankyou for visiting")
+    print("Thank you for visiting")
     time.sleep(1)
     print(border)
     # function for main menu.
