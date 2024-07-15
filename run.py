@@ -1,18 +1,14 @@
 import math
-
+import time
 import colorama
 colorama.init()
-
-import time
-
-time.sleep(1)
 
 
 # Declaring variables
 border = """
 -----------------------------------------------------------------
 """
-
+time.sleep(1)
 # Getting user name by input
 name = input(colorama.Fore.GREEN + "What is your name? ")
 time.sleep(1)
@@ -22,10 +18,11 @@ print(colorama.Fore.WHITE + border)
 def start():
     """ calculator start function"""
 
+
 time.sleep(1)
-print( colorama.Fore.BLUE + f"Dear {name} welcome to crochet guage calculator")
+print(colorama.Fore.BLUE + f"Dear {name} welcome to crochet guage calculator")
 time.sleep(1)
-print( colorama.Fore.WHITE + border)
+print(colorama.Fore.WHITE + border)
 # printing border at the end of print statement.
 time.sleep(1)
 print(f"You can use this app to calculate following:")
@@ -42,7 +39,7 @@ print(border)
 time.sleep(2)
 print(colorama.Fore.BLUE + "you need to follow these steps:")
 time.sleep(1)
-print( colorama.Fore.WHITE + border)
+print(colorama.Fore.WHITE + border)
 time.sleep(1)
 print(colorama.Fore.WHITE + "1:Make a swatch.")
 time.sleep(1)
@@ -56,7 +53,8 @@ print("5:measure the length in inches.")
 time.sleep(1)
 print(border)
 global swatch_length
-swatch_length = float(input(colorama.Fore.GREEN + "Enter the swatch length (in inches): "))
+swatch_length = float(input(colorama.Fore.GREEN + "Enter\
+ the swatch length (in inches): "))
 # getting user input for swatch width.
 global swatch_width
 time.sleep(1)
@@ -98,10 +96,11 @@ def calculate_gauge():
     # printing border and print statment, border will\
     # be before and after the print statment.
     time.sleep(1)
-    print( colorama.Fore.WHITE + border)
+    print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.BLUE + f"Dear {name}, you Guage on the base of your swatch is\
-    {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
+    print(colorama.Fore.BLUE + f"Dear {name}, you Guage on the base of your \
+    swatch is {rows_per_inch} rows per inch\
+    and {stitches_per_inch} stiches per inch ")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     # printing sample_length statement
@@ -113,7 +112,8 @@ def calculate_gauge():
 
 
 def blanket_row_stitch_calculation():
-    """Funtion to calculate Total Rows and Stitches per row  for the project according to input provided by user"""
+    """Funtion to calculate Total Rows and Stitches per row\
+    for the project according to input provided by user"""
     # Calculate stitches and rows per inch (using swatch data)\
     #  and rounding up result as whole number.
     stitches_per_inch = int(number_of_stitches / swatch_width)
@@ -122,14 +122,14 @@ def blanket_row_stitch_calculation():
     print("Enter the required project length")
     # getting user input for the required project length.
     time.sleep(1)
-    required_project_length = float(input(colorama.Fore.GREEN + "Enter the project\
-    length (in inches): "))
+    required_project_length = float(input(colorama.Fore.GREEN + "Enter\
+    the project length (in inches): "))
     time.sleep(1)
     print(colorama.Fore.WHITE + "Enter the required project width")
     # getting user input for required project width.
     time.sleep(1)
-    required_project_width = float(input(colorama.Fore.GREEN + "Enter the project\
-    width (in inches): "))
+    required_project_width = float(input(colorama.Fore.GREEN + "Enter\
+    the project width (in inches): "))
     # Calculate total rows and stitches.
     total_rows_for_project = int(required_project_length * rows_per_inch)
     total_stitches_per_row = int(required_project_width * stitches_per_inch)
@@ -138,8 +138,8 @@ def blanket_row_stitch_calculation():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.BLUE + f"dear {name} you need {total_rows_for_project} Rows and\
-    {total_stitches_per_row} stiches per Row for this project")
+    print(colorama.Fore.BLUE + f"dear {name} you need {total_rows_for_project}\
+    Rows and {total_stitches_per_row} stiches per Row for this project")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     # printing Thank you statement.
@@ -155,7 +155,8 @@ def project_cost():
      using the input provided by the user"""
     # getting user input for yarn used for swatch in grams.
     time.sleep(1)
-    yarn_weight = float(input(colorama.Fore.GREEN + "Enter the yarn weight used\
+    yarn_weight = float(input(colorama.Fore.GREEN + "Enter\
+    the yarn weight used\
     for the swatch (in grams): "))
 
     # Calculate swatch area
@@ -164,10 +165,12 @@ def project_cost():
     yarn_per_inch = yarn_weight / swatch_area
     time.sleep(1)
     # getting the user input for required project length.
-    project_length = int(input(colorama.Fore.GREEN + "Enter project length in inches: "))
+    project_length = int(input(colorama.Fore.GREEN + "Enter\
+    project length in inches: "))
     # getting user input for required project width.
     time.sleep(1)
-    project_width = int(input(colorama.Fore.GREEN + "Enter project width in inches: "))
+    project_width = int(input(colorama.Fore.GREEN + "Enter\
+    project width in inches: "))
     # calculating project_Area and estimated_yarn.
     project_Area = project_length*project_width
     estimated_yarn = project_Area*yarn_per_inch
@@ -180,7 +183,7 @@ def project_cost():
     print(colorama.Fore.BLUE + f" Dear {name} you need {Total_balls_of_yarn }\
     balls of yarn for the project.")
     time.sleep(1)
-    print( colorama.Fore.WHITE + border)
+    print(colorama.Fore.WHITE + border)
     # getting user input for price of yarn per 100grams.
     time.sleep(1)
     cost = float(input(colorama.Fore.GREEN + "Enter the price per 100grams: "))
@@ -190,7 +193,8 @@ def project_cost():
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     time.sleep(2)
-    print(colorama.Fore.BLUE + f" Dear {name} your project cost will be ${project_cost}")
+    print(colorama.Fore.BLUE + f" Dear {name}\
+    your project cost will be ${project_cost}")
     time.sleep(1)
     print(colorama.Fore.WHITE + border)
     # printing Thank you statement.
@@ -243,4 +247,3 @@ while True:
     else:
         # printing invalid statment
         print("Invalid option")
-      
