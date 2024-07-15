@@ -91,8 +91,8 @@ def calculate_gauge():
     # based on a swatch."""
     # Calculate stitches and rows per inch (using swatch data)
     # rounding the result as whole number us int data type.
-    stitches_per_inch = int(number_of_stitches / swatch_width)
-    rows_per_inch = int(number_of_rows / swatch_length)
+    stitches_per_inch = math.ceil(number_of_stitches / swatch_width)
+    rows_per_inch = math.ceil(number_of_rows / swatch_length)
     # printing border and print statment, border will\
     # be before and after the print statment.
     time.sleep(1)
@@ -116,8 +116,8 @@ def blanket_row_stitch_calculation():
     for the project according to input provided by user"""
     # Calculate stitches and rows per inch (using swatch data)\
     #  and rounding up result as whole number.
-    stitches_per_inch = int(number_of_stitches / swatch_width)
-    rows_per_inch = int(number_of_rows / swatch_length)
+    stitches_per_inch = float(number_of_stitches / swatch_width)
+    rows_per_inch = float(number_of_rows / swatch_length)
     # Get user input for project dimensions
     print("Enter the required project length")
     # getting user input for the required project length.
@@ -131,8 +131,8 @@ def blanket_row_stitch_calculation():
     required_project_width = float(input(colorama.Fore.GREEN + "Enter\
     the project width (in inches): "))
     # Calculate total rows and stitches.
-    total_rows_for_project = int(required_project_length * rows_per_inch)
-    total_stitches_per_row = int(required_project_width * stitches_per_inch)
+    total_rows_for_project = math.ceil(required_project_length * rows_per_inch)
+    total_stitches_per_row = math.ceil(required_project_width * stitches_per_inch)
     # printing border and print statment for result
     # adding users name in the statment.
     time.sleep(1)
