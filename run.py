@@ -16,7 +16,7 @@ border = """
 # Getting user name by input
 name = input(colorama.Fore.GREEN + "What is your name? ")
 time.sleep(1)
-print(border)
+print(colorama.Fore.WHITE + border)
 
 
 def start():
@@ -42,7 +42,7 @@ print(border)
 time.sleep(2)
 print(colorama.Fore.RED + "you need to follow these steps:")
 time.sleep(1)
-print(border)
+print( colorama.Fore.WHITE + border)
 time.sleep(1)
 print(colorama.Fore.WHITE + "1:Make a swatch.")
 time.sleep(1)
@@ -77,12 +77,13 @@ number_of_rows = int(input("Enter the number of rows in the swatch: "))
 start()
 time.sleep(1)
 print(colorama.Fore.WHITE + border)
-time.sleep(1)
-print(border)
+
 
 # printing statment to select options.
 time.sleep(1)
 print("Please enter from one of the following option: ")
+time.sleep(1)
+print(border)
 
 
 # function calculate_guage
@@ -97,7 +98,7 @@ def calculate_gauge():
     # printing border and print statment, border will\
     # be before and after the print statment.
     time.sleep(1)
-    print(border)
+    print( colorama.Fore.WHITE + border)
     time.sleep(2)
     print(colorama.Fore.RED + f"Dear {name}, you Guage on the base of your swatch is\
     {rows_per_inch} rows per inch and {stitches_per_inch} stiches per inch ")
