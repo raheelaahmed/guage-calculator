@@ -31,7 +31,7 @@ This calculator can calculate the following for you:
 
 ## Flow Chart:
 
-![chart](documents/images/flow chart 1.png)
+![](documents/images/flow-chart-1.png)
 
 
 
@@ -152,49 +152,36 @@ if user chooses option 0 then program will exit and break the loop other will it
 
 
 
-
-
-
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
-
-## Reminders
-
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
-
 ## Debugging:
-  ### deployment to Heroko error:
-  Missing required flag app
-  ### solution:
-   node.js file was missing, i added it and it was working fine.
-  
-  
 
-  credits:
+### deployment to Heroko error:
+  
+  Missing required flag app
+ 
+  
+#### solution:
+  
+node.js file was missing, i added it and it was working fine.
+
+
+ ### Display delay:
+
+ When program start running it was asking for user input and then the everything was displayed in one step. I wanted to display the data step be step.
+
+ #### solution: 
+
+ i have used sleep timer to fix this problem and set up time delay  from 0.5 second to 1 second, it help to display the data step be step.
+
+
+ 
+## credits:
+
+I have created menu function following video from youtube.
 
   https://www.youtube.com/watch?v=63nw00JqHo0
+
+I would like to thank my mentor Alan for appriciating my idea and guiding me throughout the project development. I would like to thank Amy to test the project  for me and for value able suggesstions.
+
+
   
 
