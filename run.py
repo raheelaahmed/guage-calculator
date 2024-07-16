@@ -98,7 +98,7 @@ def calculate_gauge():
     time.sleep(0.5)
     print(colorama.Fore.WHITE + border)
     time.sleep(1)
-    print(colorama.Fore.BLUE + f"Dear {name}, you Guage on the base of your \
+    print(colorama.Fore.BLUE + f"Dear {name}, your Guage on the base of your \
     swatch is {rows_per_inch} rows per inch\
     and {stitches_per_inch} stiches per inch ")
     time.sleep(0.5)
@@ -146,7 +146,7 @@ def blanket_row_stitch_calculation():
     print(colorama.Fore.WHITE + border)
     # printing Thank you statement.
     time.sleep(0.5)
-    print("Thank. you for visiting")
+    print("Thank you for visiting")
     time.sleep(0.5)
     print(border)
     # function to calculate the estimated yarn and cost for the project.
