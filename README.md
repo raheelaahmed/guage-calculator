@@ -170,7 +170,18 @@ node.js file was missing, i added it and it was working fine.
 
  #### solution: 
 
- i have used sleep timer to fix this problem and set up time delay  from 0.5 second to 1 second, it help to display the data step be step.
+ I have used sleep timer to fix this problem and set up time delay  from 0.5 second to 1 second, it help to display the data step be step.
+
+ ### While loop:
+
+ I have used while loop for handling valueError for user input, but program was running the while loop before calling of the function.
+
+ #### Solution:
+
+ I have used the start function to take all the input from the user and used while loop for each input for error handling.
+ I have declared all variable that are taking input from the user as global variable  so they can be used in all the function and program will run smoothly, user dont need to re enter the data for any function. 
+
+
 
 
 ## Testing:
