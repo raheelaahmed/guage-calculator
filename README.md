@@ -110,7 +110,7 @@ white color is used for the other data and borders. It will be white in black te
 I have used sleep timer in my program. Timer is set for 0.5 seconds and 1 second.
 1 second is for the output(result) statements and 0.5 for the rest of the program. It help the user to see every part of the program being displayed step by step.
 
-## Guage Calculator on Termilanl:
+## Guage Calculator on Terminal:
 
 When program start running on the terminal program asks the user to enter the name.
 
@@ -171,6 +171,23 @@ node.js file was missing, i added it and it was working fine.
  #### solution: 
 
  i have used sleep timer to fix this problem and set up time delay  from 0.5 second to 1 second, it help to display the data step be step.
+
+
+## Testing:
+
+##  Development and Deployment:
+
+I have created a repository using Code institute template on git hub.
+
+I have used Git pod codesapce for project development.
+
+You can clone my repistory using the link below:
+https://github.com/raheelaahmed/guage-calculator.git
+
+### Deployement:
+
+I have use Heroku for Deployment.
+
 
 
  
