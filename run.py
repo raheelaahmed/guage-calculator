@@ -248,9 +248,8 @@ def project_cost():
     time.sleep(0.5)
     print(border)
     # function for main menu.
- 
 
-
+    
 def menu():
     # printing options.
     time.sleep(0.5)
@@ -282,7 +281,7 @@ while True:
     elif option == 3:
       # if user choose option 3 calling function project_cost().
       project_cost()
-
+          
     elif option == 0:
         print("Exiting the program.")
         # if user choose option 0  Exit the loop.
@@ -291,3 +290,6 @@ while True:
     else:
         # printing invalid statment
         print("Invalid option")
+
+
+     

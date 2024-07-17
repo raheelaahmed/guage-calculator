@@ -210,11 +210,29 @@ I have created a repository using Code institute template on git hub.
 I have used Git pod codesapce for project development.
 
 You can clone my repistory using the link below:
-https://github.com/raheelaahmed/guage-calculator.git
+
+[Guage Calculator](https://github.com/raheelaahmed/guage-calculator.git)
 
 ### Deployement:
 
-I have use Heroku for Deployment.
+I have use Heroku to deploy my project. Steps to deploy are as follows:
+
+* Login to Heroku.
+* go to dashboard.
+* click New
+* Choose Create New App
+* Add App name and select a region
+* click Create app
+* open Deploy
+* select GitHub from Deployment methods
+* Search for a repository to connect to
+* Click Connect
+* Choose a branch to deploy(main)
+* Click Deploy Branch
+* successfull deployment message dispalys with view button.
+* click view to open App
+
+here is live App link [Crochet Guage Calculator](https://guage-calculator-c29404fb9d92.herokuapp.com/)
 
 
 
