@@ -122,11 +122,11 @@ When user press enter after entering the name, then welcome statement is display
 
 then instructions to use the program are displayed, Make a Swatch and what measurement are need for the program.
 
-![](documents/images/instructions.png)
+![](documents/images/instruction.png)
 
 then program asks for the user input for length, width, number of stiches per row and total rows on the base on the swatch.
 
-![](documents/images/user-input-start.png)
+![](documents/images/user-input.png)
 
 when user press enter after providing all the input options are displayed, user can choose from the given options 1,2,3 and 0 for exit.
 on the base on user choice function are called.
@@ -152,7 +152,7 @@ if user chooses option 0 then program will exit and break the loop other will it
 
 
 
-## Debugging:
+## Debugging and Errors:
 
 ### deployment to Heroko error:
   
@@ -179,7 +179,24 @@ node.js file was missing, i added it and it was working fine.
  #### Solution:
 
  I have used the start function to take all the input from the user and used while loop for each input for error handling.
- I have declared all variable that are taking input from the user as global variable  so they can be used in all the function and program will run smoothly, user dont need to re enter the data for any function. 
+ I have declared all variable that are taking input from the user as global variable  so they can be used in all the function and program will run smoothly, user dont need to re enter the data for any function.
+
+ ### Value Error:
+
+ There was a value error for user input if you enter a number for name, programs was accepting it and if you enter a string or press enter out a value, programe was giving a valueError.
+
+ ![](documents/images/value-error.png)
+
+#### Solution: 
+
+ I have used while loop for the valueErrors, now program only except valid data as name(String) and number only as user input for float or int data types.
+
+ ![](documents/images/name.png)
+ 
+ 
+ ![](documents/images/number-error.png)
+
+
 
 
 
