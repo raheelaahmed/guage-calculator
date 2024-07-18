@@ -277,7 +277,7 @@ node.js file was missing, i added it and it was working fine.
  I have used the start function to take all the input from the user and used while loop for each input for error handling.
  I have declared all variable that are taking input from the user as global variable  so they can be used in all the function and program will run smoothly, user dont need to re enter the data for any function.
 
- ### Value Error:
+ ### ValueError:
 
  There was a value error for user input if you enter a number for name, programs was accepting it and if you enter a string or press enter out a value, programe was giving a valueError.
 
@@ -292,9 +292,11 @@ node.js file was missing, i added it and it was working fine.
  
  ![](documents/images/number-error.png)
 
+ ### ValueError for random number in options:
 
-
-
+elif statement is used in menu function to define the numbers for option, if user enter a number other than the given options, program print outs an Error and ask the user to enter the valid number.
+except valueError for int input is unable to fix it, as it is detecting sting and empty input.
+now program is running smoothly without any ValueErrors.
 
 
 ## Testing:
