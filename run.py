@@ -285,7 +285,7 @@ while True:
             project_cost()
             continue
         elif option == 0:
-            print("Exiting the program.")
+            print(colorama.Fore.WHITE + "Exiting the program.")
         # If user choose option 0  Exit the loop.
             break
         # Error handling for any number other than the given options.

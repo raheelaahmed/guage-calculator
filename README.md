@@ -2,16 +2,14 @@
 
 # Guage Calculator:
 
-Guage calculator is a tool used by the people who crochet or knit. They use it to calculate the number rows and number of Stiches per inch, so they can used it for their project, it helps them to calculate how many rows they will be needing for specific length and how many stitches for specific width.
-To calculate the guage you have to do the following steps:
+Gauge calculator is a tool used by those who crochet or knit. It helps calculate the number of rows and stitches per inch, essential for planning projects. To determine your gauge, follow these steps:
 
-* Make a swatch(sample) using your desired staich that you want to use for your project.
-* Measure the length and width of the swatch.
+* Create a swatch using your desired yarn and hook.
+* Measure the swatch's length and width.
 * Count the number of rows.
 * Count the number of stitches in a row.
 
-You will need above measurements to calculate your guage for the project. 
-It is very important to use same hook size and yarn for the project that you used for swatch.
+Use these measurements to calculate your gauge. It's crucial to maintain the same hook size and yarn for your project as used in the swatch.
 
 
 ## Content:
@@ -41,20 +39,28 @@ It is very important to use same hook size and yarn for the project that you use
  [credits](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#credits)
 
 ## Story:
- If you crochet you can understand the importance of calculation for your project. By making less or more stiches whole project goes out of the place. If you do the calculations 
- manually there are chances of human error.
- When i was doing my first crochet jumper by following a pattern. It was a crochet hooded cardigan for the baby(6 month old).
- I did not used the right guage for the pattern and when the project was complete it was measuring a newborn size. so guage and hook size is very important.
- when i got the chance to make a python project. I wanted to make a calculator for my fellow crocheters to make calculation easier.
+
+If you crochet, you understand the importance of accurate calculations for your project. Making too few or too many stitches can significantly impact the final outcome. Manual calculations are prone to human error.
+When I made my first crochet hooded cardigan for a six-month-old baby, I didn't use the correct gauge for the pattern. The finished product was too small, emphasizing the importance of gauge and hook size. This experience inspired me to create a Python calculator to assist fellow crocheters with their calculations.
 
  ## Crochet-Guage-Calculator:
 
-This calculator can calculate the following for you:
+This calculator can determine the following:
 
-* It can Calculate Guage for you, number of rows and stiches per inch.
-* It can calculate for you how many Rows and how many Stitches per row you need for the project according to your desired length and width of the project.
-* It can calculate how many grams of yarn/wool you will be needing for the project.
-* It can calculate the cost of the project for you.
+### Gauge: 
+
+Calculate the number of rows and stitches per inch.
+
+### Project Requirements: 
+
+Calculate the number of rows and stitches needed for your project based on desired dimensions.
+
+### Yarn Estimation:
+
+ Estimate the yarn amount required for your project.
+### Project Cost: 
+
+Calculate the approximate cost of the project.
 
 ## Flow-Chart:
 
@@ -113,46 +119,34 @@ This calculator has 5 functions listed below:
 ### start():
 
 
-(Welcomes the user, explains the program, and gathers user input for swatch measurements.)
-This is the function to start the program and describe the users how this program works and what it can do for them.
-It has all the instruction that user need to start calculations like they need to make a Swatch and measure the length, width, count the stiches per row and total rows from the swatch.
-This function also takes input from the user on the base on swatch. It takes user input for length, width, stitches per row and total rows.
-All the input taken from the user is declared as global and will be user in 3 other functions for calculations.
+This function introduces the program to the user, explaining its purpose and functionality. It provides instructions on creating a swatch and gathering necessary measurements: length, width, stitch count, and row count. These measurements are stored as global variables for later calculations within the program.
 
 
 ### calculate_gauge():
 
 
-(Calculates the gauge based on swatch measurements.)
-This function calculates guage for any kind of project. It calculates Stiches per inch Rows per inch based on the input took from the user in start function. math.ceil method is used to round up the calculated numbers as whole number. 
-It print out the result(guage for. the project). as well.
+Calculates the gauge based on swatch measurements. This function determines the gauge for any project by calculating the stitches and rows per inch based on user-provided swatch data. The math.ceil method rounds up the calculated values to whole numbers. The function then displays the resulting gauge.
 
 
 ### blanket_row_stitch_calculation():
 
 
-(Calculates rows and stitches needed for the project based on user input.)
-This function is used to calculated Stiches per row Total Rows need for the project based on the user input for length and width of the project.
-It uses the input from global variables and use them in calculations and ask user for required project length and required project width and uses the input to calculate the Stiches per row Total Rows need for the project.  It also uses math.ceil to round up the result as whole number.
-It print out the result as well.
+Calculates rows and stitches needed for the project based on user input. This function determines the required number of stitches per row and total rows for a project based on user-specified length and width. It utilizes global variables for calculations and prompts the user for the desired project dimensions. The math.ceil function is employed to round up calculated values to whole numbers. The function outputs the calculated row and stitch counts.
 
 ### project_cost():
 
-(Estimates yarn amount and cost based on project dimensions and yarn information.)
-This function calculates the estimated yarn and cost for the project based on the input provided be the user. It also uses the input from global variables for the calculations and take input to the amount of yarn used in swatch in grams then takes the input for the required project length and width and caculates how many ball of yarn needed for the project.
-It also takes input from the user for price of the yarn per 100g and calculates the cost for the project.
-It print out the result fot the estimated yaarn and estimated cost for the project.
+Estimates yarn amount and cost based on project dimensions and yarn information. This function calculates the approximate yarn required and project cost. It utilizes user-provided yarn weight, swatch dimensions, and project dimensions. The function determines the yarn needed in grams and balls, then calculates the total cost based on the yarn price per 100 grams.
 
 ### menu():
 
-(Displays a menu with options to choose functionalities and handles user input.)
-This the the function menu, it has option as 1,2,3,0 and while loop is usd. to check the conditions.
+Displays a menu with options to choose functionalities and handles user input.
+It has option as 1,2,3,0 and while loop is used to to run the option and for Error handling.
 * option 1 is for calculate_gauge().
 * option 2 is for blanket_row_stitch_calculation().
 * option 3 is for project_cost().
 * option 0 is for Exit the program.
 
-It print out all the 4 option and calls the function based on user choice.
+It print out all the 4 option and calls the function based on the user choice.
 
 
 ## Color-coding:
@@ -218,31 +212,30 @@ on the base on user choice function are called.
 
 ![](documents/images/options.png)
 
-If user chooses option 1 the program will start calculating guage based on the input provided by the user and displays the results.
+If user chooses option 1, program will call calculate_guage() and displays the calculated guage based on the user input.
 
 ![](documents/images/option-1.png)
 
-if user chooses option 2, program will ask the user input fot the required program length and width and then display the result.
+if user chooses option 2, program will call blanket_row_stitch_calculation() and displays the the result of the calculation based on the user input from swatch and required project dimentions.
 
 ![](documents/images/option-2.png)
 
-if user choose option 3, program will calculate the estimated yarn and cost for the project. it will ask for user input for the yarn in gram used for the swatch and required project length and width and then dispayes the result. 
-then program will ask for the user input for the price of yarn per 100grams. after press enter program will display the cost for the project.
+if user choose option 3, program will call project_cost() and displays the result of the the calculations for estimated yarn and project cost. 
 
 ![](documents/images/option-3.png)
 
-if user chooses option 0 then program will exit and break the loop other will it will keep running.
+if user chooses option 0, program will exit and break the loop.
 
 ![](documents/images/option-0.png)
 
 
 ## Content-Left:
 
-This Guage calculator can do  more function that i was unable to do because of the time limit. It can do Following and so much more:
+This gauge calculator has potential for many more calculations beyond its current capabilities. Due to time constraints, I couldn't implement the following features:
 
 * Calculations for circle shaped projects.
 * It can calculate decrese or increase of the stiches for the projects.
-* It can do calculation for pre defined different sizes.
+* It can do calculation for pre defined different measurements.
 * It can calculte how many rows of increasing or decreasing you need to get you desired project width and height.
 * It Can do calulation for hats as well.
 
@@ -257,35 +250,37 @@ This Guage calculator can do  more function that i was unable to do because of t
   
 #### solution:
   
-node.js file was missing, i added it and it was working fine.
+node.js file was missing, after adding the missing file program was working.
 
 
  ### Display delay:
 
- When program start running it was asking for user input and then the everything was displayed in one step. I wanted to display the data step be step.
+ When program start running, it was asking for user input and then the everything was displayed in one step. I wanted to display the data step be step.
 
- #### solution: 
+ #### Solution: 
 
- I have used sleep timer to fix this problem and set up time delay  from 0.5 second to 1 second, it help to display the data step be step.
+ I have used sleep timer for display delay and set up time delay from 0.5 second to 1 second, it help to display the data step be step.
 
  ### While loop:
 
- I have used while loop for handling valueError for user input, but program was running the while loop before calling of the function.
+ I have used while loop for handling valueError for user input, but program starting calling the the while loop before function call.
 
  #### Solution:
 
  I have used the start function to take all the input from the user and used while loop for each input for error handling.
- I have declared all variable that are taking input from the user as global variable  so they can be used in all the function and program will run smoothly, user dont need to re enter the data for any function.
+ I have declared all variable that are taking input from the user as global variable so they can be used in all the function and program will run smoothly, user dont need to re enter the data for any function.
 
  ### ValueError:
 
- There was a value error for user input if you enter a number for name, programs was accepting it and if you enter a string or press enter out a value, programe was giving a valueError.
+ There was a value error for user input if you enter a number for name, programs was accepting it.
+ There was a ValueError for int input aswell. For example if you enter a string or empty input, program give ValueError and exit the program.  
 
  ![](documents/images/value-error.png)
 
 #### Solution: 
 
- I have used while loop for the valueErrors, now program only except valid data as name(String) and number only as user input for float or int data types.
+ I have used while loop for the valueErrors, now program only except valid data as name(String only and it should be at laest 3 characters). 
+ If user enter invalid data for int or float data type. program will show error message and ask for the input again until user enters correct input.
 
  ![](documents/images/name.png)
  
@@ -294,15 +289,12 @@ node.js file was missing, i added it and it was working fine.
 
  ### ValueError for random number in options:
 
-elif statement is used in menu function to define the numbers for option, if user enter a number other than the given options, program print outs an Error and ask the user to enter the valid number.
-except valueError for int input is unable to fix it, as it is detecting sting and empty input.
-now program is running smoothly without any ValueErrors.
+The elif statements in the menu function define the possible options (1, 2, 3, and 0). If a user enters a number outside this range, an error message is displayed, prompting them to choose a valid option. The except ValueError block handles instances where non-numeric input is provided, preventing program crashes and ensuring smooth operation.
 
 
 ## Testing:
 
-I have tested my App using "CI Python Linter" and no errors were found but when i run the code after clearing the errors on "CI Python Linter", my program was not running properly as it was effecting "break" statement and "except valueError" and it was effecting "menu()" as well.
-I restested the code again to make sure program runs smoothly and left the errors that were effecting the program when they were removed.
+I tested the application using a CI Python linter, which identified no errors. However, upon running the code after addressing these linter issues, the program encountered unexpected behavior affecting the break statement, except ValueError block, and the menu() function. To resolve these issues, I re-tested the code after removing the problematic elements, ensuring the program's correct functionality.
 
 ![error-testing](documents/images/testing.png)
 
@@ -313,20 +305,18 @@ Error that were effecting the program when removed as below screenshot.
 
 ### Manual-Testing:
 
-| Test      | Working | Not working |
-|----------|-----|-----|
-| Run program | Yes |  |
-| Name user-input| YES |  |
-| Welcome statement| Yes |  |
-| Border | Yes |  |
-| Program description | Yes |  |
-| Instructions | Yes |  |
-| User input | Yes |  |
-| Error handling | Yes |  |
-| Empty user input error handling | Yes |  |
-| Data type error handling | Yes |  |
-| Color coding | Yes |  |
-| Sleep timer | Yes |  |
+| Test      | Pass/Fail| 
+|----------|-----|
+| Run program | Pass |
+| User input for name display| Pass | 
+| Welcome statement display| Pass |
+| Border display | Pass |
+| Program description display | Pass |
+| Instructions display | Pass |
+| User input for swatch  | Pass |
+| ValueError handling | Pass |
+| Color coding | Pass |
+| Sleep timer | Pass |
 
 ### Function-Testing:
  
@@ -342,9 +332,7 @@ Error that were effecting the program when removed as below screenshot.
 
 
 
-All the function of the program are working, all the user input is taken in "start function". Rest of the function "calculate_gauge(), blanket_row_stitch_calculation(), project_cost()" take values from "start function" and do caculations and print out the result/output, then "menu function" call all the function using options.
-while statement is used in the "start function" for valueError handling and it is used in "menu function" to check if True then "option=menu()".
-While statement is working fine in both functions.
+All program functions operate correctly. The start function collects user input, which is then utilized by calculate_gauge, blanket_row_stitch_calculation, and project_cost for calculations and output generation. The menu function coordinates these functions based on user choices. Both the start and menu functions employ while loops for error handling and menu navigation, respectively. These loops function as expected.
 
 
 
@@ -370,7 +358,7 @@ If user enter "0", program will Exit.
 
 ##  Development-and-Deployment:
 
-I have created a repository using Code institute template on git hub.
+I have created a repository using Code institute template on GitHub.
 
 I have used Git pod codesapce for project development.
 
@@ -404,15 +392,13 @@ here is live App link [Crochet Guage Calculator](https://guage-calculator-c29404
  
 ## credits:
 
-I have created "menu function" following video from youtube.
+I have created "menu function" following video from youtube, video link is given below.
 
-  https://www.youtube.com/watch?v=63nw00JqHo0
+  [Youtube](https://www.youtube.com/watch?v=63nw00JqHo0)
 
-I heve used W3 and Code Institute course for learning.
+I have used W3Schools and Code Institute courses for learning.
 
-
-I would like to thank my mentor Alan for appriciating my idea and guiding me throughout the project development. I would like to thank Amy to test the project  for me and for value able suggesstions.
-I would like to thank Tuter Support of Code Institute as well, they helped out in successfull Deployment on Heroku plateform.
+I would like to thank my mentor, Alan, for appreciating my idea and guiding me throughout the project development. I would also like to thank Amy for testing the project and providing valuable suggestions. Additionally, I am grateful to the Code Institute Tutor Support team for their assistance with the successful deployment on the Heroku platform.
 
 
 
