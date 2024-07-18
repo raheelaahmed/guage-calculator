@@ -16,27 +16,27 @@ It is very important to use same hook size and yarn for the project that you use
 
 ## Content:
 
- [Story](doc/Story.md)
+ [Story](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#story)
  
- [Crochet Guage Calculator](doc/Crochet-Guage-Calculator.md)
+ [Crochet Guage Calculator](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#crochet-guage-calculator)
 
- [Flow Chart](doc/Flow-Chart.md)
+ [Flow Chart](https://github.com/raheelaahmed/guage-calculator/blob/main/doc/Flow-Chart.md)
  
- [Calculator Logic](doc/Calculator-Logic.md)
+ [Calculator Logic](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#calculator-logic)
  
- [Color coding](doc/Color-coding.md)
+ [Color coding](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#color-coding)
  
- [Sleep timer](doc/Sleep-timer.md)
+ [Sleep timer](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#sleep-timer)
  
- [Guage Calculator on Terminal](doc/Guage-Calculator-on-Terminal.md)
+ [Guage Calculator on Terminal](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#guage-calculator-on-terminal)
  
- [Debugging and Errors](doc/Debugging-and-Errors.md)
+ [Debugging and Errors](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#debugging-and-errors)
  
- [Testing](doc/Testing.md)
+ [Testing](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#testing)
  
- [Development and Deployment](doc/Development-and-Deployment.md)
+ [Development and Deployment](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#development-and-deployment)
  
- [credits](doc/credits.md)
+ [credits](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#credits)
 
 ## Story:
  If you crochet you can understand the importance of calculation for your project. By making less or more stiches whole project goes out of the place. If you do the calculations 
@@ -227,6 +227,11 @@ node.js file was missing, i added it and it was working fine.
 
 
 ## Testing:
+
+I have tested my App using CI Python Linter and no errors were found.
+
+[error-testing](documents/images/testing.png)
+
 
 ##  Development-and-Deployment:
 
