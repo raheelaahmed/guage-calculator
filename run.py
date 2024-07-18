@@ -264,32 +264,37 @@ def menu():
     print("[3] Enter 3 to calculate Estimated yarn and Cost for your project")
     time.sleep(0.5)
     print("[0] Exit the program")
-    # getting user input  for options.
-    option = int(input("Enter your option here: "))
+    # Getting user input for options
+    option = int(input(colorama.Fore.GREEN + "Enter your option here: "))
     return option
-    # using while loop, if user enter correct option it will start
-    # calling functions accoring to user choosen option.
 
 
 while True:
-    option = menu()
-    if option == 1:
-        # if user choose option 1 calling function calculate_gauge().
-        calculate_gauge()
-
-    elif option == 2:
-        # if user choose option 2 calling function\
-        blanket_row_stitch_calculation()
-
-    elif option == 3:
-        # if user choose option 3 calling function project_cost().
-        project_cost()
-          
-    elif option == 0:
-        print("Exiting the program.")
-        # if user choose option 0  Exit the loop.
-        break
-
-    else:
-        # printing invalid statment
-        print("Invalid option")
+    try:
+        option = menu()
+        if option == 1:
+            # if user choose option 1 calling function calculate_gauge().
+            calculate_gauge()
+            continue
+        elif option == 2:
+            # if user choose option 2 calling function\
+            blanket_row_stitch_calculation()
+            continue
+        elif option == 3:
+            # if user choose option 3 calling function project_cost().
+            project_cost()
+            continue
+        elif option == 0:
+            print("Exiting the program.")
+        # If user choose option 0  Exit the loop.
+            break
+        # Error handling for any number other than the given options.
+        elif option != 0 or 1 or 2 or 3:
+            print(colorama.Fore.RED + " Invalid number, Plaese enter a\
+  number from the given option")
+            print(colorama.Fore.WHITE + border)
+        # Error handling for empty input or string data type.
+    except ValueError:
+        print(colorama.Fore.RED + "Please enter a valid number\
+ from the given options.")
+        print(colorama.Fore.WHITE + border)
