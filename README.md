@@ -11,7 +11,22 @@ To calculate the guage you have to do the following steps:
 * Count the number of stitches in a row.
 
 You will need above measurements to calculate your guage for the project. 
-It is very important to use same hook size and yarn for the project taht you used for swatch.
+It is very important to use same hook size and yarn for the project that you used for swatch.
+
+
+## Content:
+
+### Story
+### Crochet Guage Calculator
+### Flow Chart
+### Calculator Logic
+### Color coding
+### Sleep timer
+### Guage Calculator on Terminal
+### Debugging and Errors
+### Testing
+###  Development and Deployment
+### credits
 
 ## Story:
  If you crochet you can understand the importance of calculation for your project. By making less or more stiches whole project goes out of the place. If you do the calculations 
@@ -229,7 +244,7 @@ I have use Heroku to deploy my project. Steps to deploy are as follows:
 * Click Connect
 * Choose a branch to deploy(main)
 * Click Deploy Branch
-* successfull deployment message dispalys with view button.
+* successfull deployment message displays with view button.
 * click view to open App
 
 here is live App link [Crochet Guage Calculator](https://guage-calculator-c29404fb9d92.herokuapp.com/)
