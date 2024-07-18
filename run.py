@@ -101,7 +101,7 @@ per row in the swatch: "))
 while True:
     try:
         number_of_rows = int(input(colorama.Fore.GREEN + "Enter\
-    the number of rows in the swatch: "))
+ the number of rows in the swatch: "))
         # Valid input, break out of the loop
         break
     except ValueError:
@@ -266,7 +266,7 @@ def menu():
     print("[0] Exit the program")
     # Getting user input for options
     option = int(input(colorama.Fore.GREEN + "Enter your option here: "))
-    print(colorama.Fore.WHITE + border)
+    
     return option
     
 while True:
