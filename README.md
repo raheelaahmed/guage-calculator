@@ -157,24 +157,37 @@ It print out all the 4 option and calls the function based on user choice.
 
 ## Color-coding:
 
-I have used colorama to change the output color for easy readablity and focus. I have used 3 colors for the program.
+I have used colorama to change the output color for easy readablity and focus. I have used 4 colors for the program.
 
 1: Green
 2: Blue
 3: White
+4: Red
 
 ### Green:
 
 Green color is used for all the input taken from the user.
+
+![](documents/images/user-input.png)
 
 
 ### Blue: 
 
 Blue color is used to display the result.
 
+![](documents/images/welcome.png)
+
 ### White:
 
 white color is used for the other data and borders. It will be white in black terminal and grey in white terminal.
+
+![](documents/images/options.png)
+
+### Red:
+
+Red color is used for errors.
+
+![](documents/images/number-error.png)
 
 
 ## Sleep-timer:
