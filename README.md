@@ -320,14 +320,14 @@ Error that were effecting the program when removed as below screenshot.
 
 ### Function-Testing:
  
-| Function   | Working | Not working |
-|----------|-----|-----|
-| Start() | Yes |  |
-| calculate_gauge() | Yes |  |
-| blanket_row_stitch_calculation() | Yes |  |
-| project_cost() | Yes |  |
+| Function   | Working | 
+|----------|-----|
+| Start() | Yes |  
+| calculate_gauge() | Yes |  
+| blanket_row_stitch_calculation() | Yes |  
+| project_cost() | Yes |  
 | menu() | Yes |  |
-| While stement | Yes |  |
+| While stement | Yes |  
 
 
 
@@ -338,12 +338,12 @@ All program functions operate correctly. The start function collects user input,
 
 ### Options:
 
-| Option   | Working | Not working |
-|----------|-----|-----|
-| 1 | Yes |  |
-| 2 | Yes |  |
-| 3 | Yes |  |
-| 0 | Yes |  |
+| Option   | Working |
+|----------|-----|
+| 1 | Yes | 
+| 2 | Yes | 
+| 3 | Yes |  
+| 0 | Yes |  
 
 Option are working fine, program take the user input for option 1, 2, 3, 0.
 If user enters "1", program runs "calculate_gauge()" and print out the result/out put. Result is printed out in blue color.
