@@ -73,6 +73,8 @@ This calculator has 5 functions listed below:
 
 ### start():
 
+
+(Welcomes the user, explains the program, and gathers user input for swatch measurements.)
 This is the function to start the program and describe the users how this program works and what it can do for them.
 It has all the instruction that user need to start calculations like they need to make a Swatch and measure the length, width, count the stiches per row and total rows from the swatch.
 This function also takes input from the user on the base on swatch. It takes user input for length, width, stitches per row and total rows.
@@ -81,24 +83,30 @@ All the input taken from the user is declared as global and will be user in 3 ot
 
 ### calculate_gauge():
 
+
+(Calculates the gauge based on swatch measurements.)
 This function calculates guage for any kind of project. It calculates Stiches per inch Rows per inch based on the input took from the user in start function. math.ceil method is used to round up the calculated numbers as whole number. 
 It print out the result(guage for. the project). as well.
 
 
 ### blanket_row_stitch_calculation():
 
+
+(Calculates rows and stitches needed for the project based on user input.)
 This function is used to calculated Stiches per row Total Rows need for the project based on the user input for length and width of the project.
 It uses the input from global variables and use them in calculations and ask user for required project length and required project width and uses the input to calculate the Stiches per row Total Rows need for the project.  It also uses math.ceil to round up the result as whole number.
 It print out the result as well.
 
 ### project_cost():
 
+(Estimates yarn amount and cost based on project dimensions and yarn information.)
 This function calculates the estimated yarn and cost for the project based on the input provided be the user. It also uses the input from global variables for the calculations and take input to the amount of yarn used in swatch in grams then takes the input for the required project length and width and caculates how many ball of yarn needed for the project.
 It also takes input from the user for price of the yarn per 100g and calculates the cost for the project.
 It print out the result fot the estimated yaarn and estimated cost for the project.
 
 ### menu():
 
+(Displays a menu with options to choose functionalities and handles user input.)
 This the the function menu, it has option as 1,2,3,0 and while loop is usd. to check the conditions.
 * option 1 is for calculate_gauge().
 * option 2 is for blanket_row_stitch_calculation().
@@ -176,6 +184,17 @@ if user chooses option 0 then program will exit and break the loop other will it
 ![](documents/images/option-0.png)
 
 
+## Content-Left:
+
+This Guage calculator can do  more function that i was unable to do because of the time limit. It can do Following and so much more:
+
+* calculation for circle shaped projects.
+* It can calculate decrese or increase of the stiches for the projects.
+* It can do calculation for pre defined different sizes.
+* It can calculte how many rows of increasing or decreasing you need to get you desired project width and height.
+* it Can do calulation for hats as well.
+
+
 
 ## Debugging-and-Errors:
 
@@ -228,9 +247,71 @@ node.js file was missing, i added it and it was working fine.
 
 ## Testing:
 
-I have tested my App using CI Python Linter and no errors were found.
+I have tested my App using "CI Python Linter" and no errors were found but when i run the code after clearing the errors on "CI Python Linter", my program was not running properly as it was effecting "break" statement and "except valueError" and it was effecting "menu()" as well.
+I restested the code again to make sure program runs smoothly and left the errors that were effecting the program when they were removed.
 
-[error-testing](documents/images/testing.png)
+![error-testing](documents/images/testing.png)
+
+Error that were effecting the program when removed as below screenshot.
+
+![errors](documents/images/testing-1.png)
+
+
+### Manual-Testing:
+
+| Test      | Working | Not working |
+|----------|-----|-----|
+| Run program | Yes |  |
+| Name user-input| YES |  |
+| Welcome statement| Yes |  |
+| Border | Yes |  |
+| Program description | Yes |  |
+| Instructions | Yes |  |
+| User input | Yes |  |
+| Error handling | Yes |  |
+| Empty user input error handling | Yes |  |
+| Data type error handling | Yes |  |
+| Color coding | Yes |  |
+| Sleep timer | Yes |  |
+
+### Function-Testing:
+ 
+| Function   | Working | Not working |
+|----------|-----|-----|
+| Start() | Yes |  |
+| calculate_gauge() | Yes |  |
+| blanket_row_stitch_calculation() | Yes |  |
+| project_cost() | Yes |  |
+| menu() | Yes |  |
+| While stement | Yes |  |
+
+
+
+
+All the function of the program are working, all the user input is taken in "start function". Rest of the function "calculate_gauge(), blanket_row_stitch_calculation(), project_cost()" take values from "start function" and do caculations and print out the result/output, then "menu function" call all the function using options.
+while statement is used in the "start function" for valueError handling and it is used in "menu function" to check if True then "option=menu()".
+While statement is working fine in both functions.
+
+
+
+### Options:
+
+| Option   | Working | Not working |
+|----------|-----|-----|
+| 1 | Yes |  |
+| 2 | Yes |  |
+| 3 | Yes |  |
+| 0 | Yes |  |
+
+Option are working fine, program take the user input for option 1, 2, 3, 0.
+If user enters "1", program runs "calculate_gauge()" and print out the result/out put. Result is printed out in blue color.
+If user enters "2", program runs "blanket_row_stitch_calculation()" and print outs the result.
+If user enters "3", program runs "project_cost()" and print out the result.
+If user enter "0", program will Exit.
+
+
+
+
 
 
 ##  Development-and-Deployment:
@@ -269,11 +350,18 @@ here is live App link [Crochet Guage Calculator](https://guage-calculator-c29404
  
 ## credits:
 
-I have created menu function following video from youtube.
+I have created "menu function" following video from youtube.
 
   https://www.youtube.com/watch?v=63nw00JqHo0
 
+I heve used W3 and code institute course for learning.
+
+
 I would like to thank my mentor Alan for appriciating my idea and guiding me throughout the project development. I would like to thank Amy to test the project  for me and for value able suggesstions.
+I would like to thank Tuter Support of code institute as well, they helped out in successfull Deployment on Heroku plateform.
+
+
+
 
 
   
