@@ -254,6 +254,8 @@ def project_cost():
 
 
 def menu():
+    """Displays a menu with options to choose functionalities\
+ and handles user input"""
     # printing options.
     time.sleep(0.5)
     print("[1] Enter 1 to calculate Project-Guage.")
