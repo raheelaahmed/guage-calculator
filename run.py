@@ -267,8 +267,7 @@ def menu():
     # Getting user input for options
     option = int(input(colorama.Fore.GREEN + "Enter your option here: "))
     return option
-
-
+    print(colorama.Fore.GREEN + border)
 while True:
     try:
         option = menu()
