@@ -30,6 +30,8 @@ It is very important to use same hook size and yarn for the project that you use
  
  [Guage Calculator on Terminal](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#guage-calculator-on-terminal)
  
+ [Content left](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#content-left)
+ 
  [Debugging and Errors](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#debugging-and-errors)
  
  [Testing](https://github.com/raheelaahmed/guage-calculator?tab=readme-ov-file#testing)
@@ -225,11 +227,11 @@ if user chooses option 0 then program will exit and break the loop other will it
 
 This Guage calculator can do  more function that i was unable to do because of the time limit. It can do Following and so much more:
 
-* calculation for circle shaped projects.
+* Calculations for circle shaped projects.
 * It can calculate decrese or increase of the stiches for the projects.
 * It can do calculation for pre defined different sizes.
 * It can calculte how many rows of increasing or decreasing you need to get you desired project width and height.
-* it Can do calulation for hats as well.
+* It Can do calulation for hats as well.
 
 
 
