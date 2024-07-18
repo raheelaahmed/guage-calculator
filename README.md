@@ -56,7 +56,44 @@ This calculator can calculate the following for you:
 
 ## Flow-Chart:
 
+
+Project Idea at Start was taking input from the user and calculating guage for the project then i and extended the project and introduced more function for the program.
+Here is the first chart made from the idea.
+
 ![](documents/images/flow-chart-1.png)
+
+chart for the start function after extending the program is given below:
+
+
+![](documents/images/start-chart.png)
+
+
+There are 4 more functions, 
+
+
+* calculate_guage():
+
+ 
+Calculates the gauge based on swatch measurements. 
+
+*  blanket_row_stitch_calculation():
+
+
+Calculates rows and stitches needed for the project based on user input.
+
+*  project_cost():
+
+
+Estimates yarn amount and cost based on project dimensions and yarn information.
+
+*  menu()
+
+
+Displays a menu with options to choose functionalities and handles user input.
+
+
+
+![](documents/images/menu-chart.png)
 
 
 
@@ -354,11 +391,11 @@ I have created "menu function" following video from youtube.
 
   https://www.youtube.com/watch?v=63nw00JqHo0
 
-I heve used W3 and code institute course for learning.
+I heve used W3 and Code Institute course for learning.
 
 
 I would like to thank my mentor Alan for appriciating my idea and guiding me throughout the project development. I would like to thank Amy to test the project  for me and for value able suggesstions.
-I would like to thank Tuter Support of code institute as well, they helped out in successfull Deployment on Heroku plateform.
+I would like to thank Tuter Support of Code Institute as well, they helped out in successfull Deployment on Heroku plateform.
 
 
 
