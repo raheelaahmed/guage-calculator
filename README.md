@@ -16,17 +16,27 @@ It is very important to use same hook size and yarn for the project that you use
 
 ## Content:
 
-### Story
-### Crochet Guage Calculator
-### Flow Chart
-### Calculator Logic
-### Color coding
-### Sleep timer
-### Guage Calculator on Terminal
-### Debugging and Errors
-### Testing
-###  Development and Deployment
-### credits
+ [Story](doc/Story.md)
+ 
+ [Crochet Guage Calculator](doc/Crochet-Guage-Calculator.md)
+
+ [Flow Chart](doc/Flow-Chart.md)
+ 
+ [Calculator Logic](doc/Calculator-Logic.md)
+ 
+ [Color coding](doc/Color-coding.md)
+ 
+ [Sleep timer](doc/Sleep-timer.md)
+ 
+ [Guage Calculator on Terminal](doc/Guage-Calculator-on-Terminal.md)
+ 
+ [Debugging and Errors](doc/Debugging-and-Errors.md)
+ 
+ [Testing](doc/Testing.md)
+ 
+ [Development and Deployment](doc/Development-and-Deployment.md)
+ 
+ [credits](doc/credits.md)
 
 ## Story:
  If you crochet you can understand the importance of calculation for your project. By making less or more stiches whole project goes out of the place. If you do the calculations 
@@ -35,7 +45,7 @@ It is very important to use same hook size and yarn for the project that you use
  I did not used the right guage for the pattern and when the project was complete it was measuring a newborn size. so guage and hook size is very important.
  when i got the chance to make a python project. I wanted to make a calculator for my fellow crocheters to make calculation easier.
 
- ## Crochet Guage Calculator:
+ ## Crochet-Guage-Calculator:
 
 This calculator can calculate the following for you:
 
@@ -44,14 +54,14 @@ This calculator can calculate the following for you:
 * It can calculate how many grams of yarn/wool you will be needing for the project.
 * It can calculate the cost of the project for you.
 
-## Flow Chart:
+## Flow-Chart:
 
 ![](documents/images/flow-chart-1.png)
 
 
 
  
-## Calculator Logic:
+## Calculator-Logic:
 
 This calculator has 5 functions listed below:
 
@@ -98,7 +108,7 @@ This the the function menu, it has option as 1,2,3,0 and while loop is usd. to c
 It print out all the 4 option and calls the function based on user choice.
 
 
-## Color coding:
+## Color-coding:
 
 I have used colorama to change the output color for easy readablity and focus. I have used 3 colors for the program.
 
@@ -120,12 +130,12 @@ Blue color is used to display the result.
 white color is used for the other data and borders. It will be white in black terminal and grey in white terminal.
 
 
-## Sleep timer:
+## Sleep-timer:
 
 I have used sleep timer in my program. Timer is set for 0.5 seconds and 1 second.
 1 second is for the output(result) statements and 0.5 for the rest of the program. It help the user to see every part of the program being displayed step by step.
 
-## Guage Calculator on Terminal:
+## Guage-Calculator-on-Terminal:
 
 When program start running on the terminal program asks the user to enter the name.
 
@@ -167,7 +177,7 @@ if user chooses option 0 then program will exit and break the loop other will it
 
 
 
-## Debugging and Errors:
+## Debugging-and-Errors:
 
 ### deployment to Heroko error:
   
@@ -218,7 +228,7 @@ node.js file was missing, i added it and it was working fine.
 
 ## Testing:
 
-##  Development and Deployment:
+##  Development-and-Deployment:
 
 I have created a repository using Code institute template on git hub.
 
