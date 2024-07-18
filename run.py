@@ -266,8 +266,9 @@ def menu():
     print("[0] Exit the program")
     # Getting user input for options
     option = int(input(colorama.Fore.GREEN + "Enter your option here: "))
+    print(colorama.Fore.WHITE + border)
     return option
-    print(colorama.Fore.GREEN + border)
+    
 while True:
     try:
         option = menu()
