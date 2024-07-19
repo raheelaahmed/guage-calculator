@@ -68,12 +68,12 @@ Calculate the approximate cost of the project.
 Project Idea at Start was taking input from the user and calculating guage for the project then i and extended the project and introduced more function for the program.
 Here is the first chart made from the idea.
 
-![](documents/images/flow-chart-1.png)
+![flow-chart](documents/images/flow-chart-1.png)
 
 chart for the start function after extending the program is given below:
 
 
-![](documents/images/start-chart.png)
+![start](documents/images/start-chart.png)
 
 
 There are 4 more functions, 
@@ -101,7 +101,7 @@ Displays a menu with options to choose functionalities and handles user input.
 
 
 
-![](documents/images/menu-chart.png)
+![menu](documents/images/menu-chart.png)
 
 
 
@@ -162,26 +162,26 @@ I have used colorama to change the output color for easy readablity and focus. I
 
 Green color is used for all the input taken from the user.
 
-![](documents/images/user-input.png)
+![green](documents/images/user-input.png)
 
 
 ### Blue: 
 
 Blue color is used to display the result.
 
-![](documents/images/welcome.png)
+![blue](documents/images/welcome.png)
 
 ### White:
 
 white color is used for the other data and borders. It will be white in black terminal and grey in white terminal.
 
-![](documents/images/options.png)
+![white](documents/images/options.png)
 
 ### Red:
 
 Red color is used for errors.
 
-![](documents/images/number-error.png)
+![red](documents/images/number-error.png)
 
 
 ## Sleep-timer:
@@ -193,40 +193,40 @@ I have used sleep timer in my program. Timer is set for 0.5 seconds and 1 second
 
 When program start running on the terminal program asks the user to enter the name.
 
-![](documents/images/name-input.png)
+![name](documents/images/name-input.png)
 
 When user press enter after entering the name, then welcome statement is displayed and and the description of the app/program is displayed.
 
-![](documents/images/app-description.png)
+![description](documents/images/app-description.png)
 
 then instructions to use the program are displayed, Make a Swatch and what measurement are need for the program.
 
-![](documents/images/instruction.png)
+![instructions](documents/images/instruction.png)
 
 then program asks for the user input for length, width, number of stiches per row and total rows on the base on the swatch.
 
-![](documents/images/user-input.png)
+![user-input](documents/images/user-input.png)
 
 when user press enter after providing all the input options are displayed, user can choose from the given options 1,2,3 and 0 for exit.
 on the base on user choice function are called.
 
-![](documents/images/options.png)
+![options](documents/images/options.png)
 
 If user chooses option 1, program will call calculate_guage() and displays the calculated guage based on the user input.
 
-![](documents/images/option-1.png)
+![option-1](documents/images/option-1.png)
 
 if user chooses option 2, program will call blanket_row_stitch_calculation() and displays the the result of the calculation based on the user input from swatch and required project dimentions.
 
-![](documents/images/option-2.png)
+![option-2](documents/images/option-2.png)
 
 if user choose option 3, program will call project_cost() and displays the result of the the calculations for estimated yarn and project cost. 
 
-![](documents/images/option-3.png)
+![option-3](documents/images/option-3.png)
 
 if user chooses option 0, program will exit and break the loop.
 
-![](documents/images/option-0.png)
+![option-0](documents/images/option-0.png)
 
 
 ## Content-Left:
@@ -275,17 +275,17 @@ node.js file was missing, after adding the missing file program was working.
  There was a value error for user input if you enter a number for name, programs was accepting it.
  There was a ValueError for int input aswell. For example if you enter a string or empty input, program give ValueError and exit the program.  
 
- ![](documents/images/value-error.png)
+ ![error](documents/images/value-error.png)
 
 #### Solution: 
 
  I have used while loop for the valueErrors, now program only except valid data as name(String only and it should be at laest 3 characters). 
  If user enter invalid data for int or float data type. program will show error message and ask for the input again until user enters correct input.
 
- ![](documents/images/name.png)
+ ![solution](documents/images/name.png)
  
  
- ![](documents/images/number-error.png)
+ ![number-error](documents/images/number-error.png)
 
  ### ValueError for random number in options:
 
